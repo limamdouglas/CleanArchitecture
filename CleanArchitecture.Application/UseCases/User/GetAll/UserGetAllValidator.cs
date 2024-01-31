@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FluentValidation;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,9 +7,10 @@ using System.Threading.Tasks;
 
 namespace CleanArchitecture.Application.UseCases.User.GetAll;
 
-public class UserGetAllResponse
+public class UserGetAllValidator : AbstractValidator<UserGetAllRequest>
 {
-    public Guid Id { get; set; }
-    public string Email { get; set; }
-    public string Name { get; set; }
+    public UserGetAllValidator()
+    {
+        
+    }
 }

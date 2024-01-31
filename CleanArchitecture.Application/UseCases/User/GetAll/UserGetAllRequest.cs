@@ -2,4 +2,5 @@
 
 namespace CleanArchitecture.Application.UseCases.User.GetAll;
 
-public sealed record UserGetAllRequest() : IRequest<UserGetAllResponse>;
+public sealed record UserGetAllRequest :
+                   IRequest<List<UserGetAllResponse>>;
